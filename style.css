@@ -73,20 +73,6 @@ body {
     padding: 0 12px 50px 12px;
     box-sizing: border-box;
 }
-.panel {
-    background: var(--negro-panel);
-    border-radius: var(--bordes);
-    box-shadow: var(--sombra);
-    padding: 2.2rem 2rem 3.5rem 2rem;
-    margin-bottom: 2.5rem;
-    border: 1.5px solid var(--borde-panel);
-    position: relative;
-    overflow: hidden;
-}
-.panel-small {
-    max-width: 640px;
-    margin: 0 auto 2.5rem auto;
-}
 .main-title {
     font-size: 2.2rem;
     font-weight: 900;
@@ -94,55 +80,10 @@ body {
     color: var(--blanco);
     text-shadow: none;
 }
-.subtitle {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1.3rem;
-    text-align: center;
+.lead {
+    font-size: 1.15rem;
     color: var(--gris-claro);
-    letter-spacing: 1px;
-    text-shadow: none;
-}
-.table-responsive {
-    width: 100%;
-    overflow-x: auto;
-}
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1.3rem;
-    border-radius: var(--bordes);
-    overflow: hidden;
-    background: #22222b;
-    border: 1.5px solid #2d2d37;
-    box-shadow: 0 2px 8px #18182055;
-}
-.table th, .table td {
-    padding: 0.95em 1.1em;
-    text-align: center;
-}
-.table th {
-    background: #23232c;
-    color: var(--blanco);
-    font-weight: bold;
-    font-size: 1.07em;
-    border-bottom: 1.5px solid #353545;
-}
-.table td {
-    color: var(--blanco);
-    background: #20202a;
-}
-.table tr {
-    border-bottom: 1px solid #23232c;
-}
-.table tbody tr:nth-child(even) {
-    background: #252530;
-}
-.table tbody tr:nth-child(odd) {
-    background: #1b1b22;
-}
-.table tbody tr:last-child {
-    border-bottom: none;
+    margin-bottom: 2rem;
 }
 .btn {
     display: inline-block;
@@ -166,67 +107,6 @@ body {
     color: var(--gris-claro);
     border-color: #44445a;
 }
-.accordion {
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1.5px solid #353545;
-    background: #23232c;
-    box-shadow: 0 2px 8px #18182040;
-}
-.accordion-item {
-    background: transparent;
-    border-bottom: 1px solid #29293d;
-}
-.accordion-item:last-child {
-    border-bottom: none;
-}
-.accordion-header {
-    margin: 0;
-}
-.accordion-button {
-    width: 100%;
-    background: none;
-    border: none;
-    color: var(--gris-claro);
-    font-size: 1.12rem;
-    font-weight: 700;
-    padding: 1.1em 1.3em;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-    background: #23232c;
-    transition: background 0.15s, color 0.14s;
-}
-.accordion-button.collapsed:after {
-    content: '+';
-    float: right;
-    font-size: 1.3em;
-    color: #505065;
-}
-.accordion-button:not(.collapsed):after {
-    content: '−';
-    float: right;
-    font-size: 1.3em;
-    color: #505065;
-}
-.accordion-body {
-    padding: 1.1em 1.3em 1.1em 1.3em;
-    color: var(--gris);
-    background: #181820;
-    border-left: 3px solid #353545;
-    font-size: 1.01rem;
-}
-.alert {
-    background: #23232c;
-    color: var(--gris-claro);
-    border-radius: 7px;
-    padding: 0.85em 1em;
-    margin-top: 1.3em;
-    font-size: 0.96rem;
-    text-align: center;
-    border: 1px solid #29293d;
-    font-weight: 500;
-}
 footer, footer p, footer span, footer div {
     background: transparent;
     color: var(--gris);
@@ -237,11 +117,6 @@ footer, footer p, footer span, footer div {
 }
 footer {
     margin-top: auto;
-}
-.container:last-of-type,
-.panel:last-of-type {
-    margin-bottom: 2.5rem;
-    padding-bottom: 1.5rem;
 }
 hr {
     border: none;
@@ -254,18 +129,11 @@ hr {
         max-width: 100vw;
         padding: 0 5vw 40px 5vw;
     }
-    .panel, .panel-small {
-        padding: 1.2rem 0.7rem 2.3rem 0.7rem;
-    }
-    .table th, .table td {
-        padding: 0.6em 0.4em;
-        font-size: 0.97em;
-    }
     .main-title {
         font-size: 1.2rem;
         word-break: break-word;
     }
-    .subtitle {
+    .lead {
         font-size: 1rem;
     }
     .navbar-brand {
@@ -297,22 +165,11 @@ hr {
     .navbar-brand img {
         height: 36px;
     }
-    .panel, .panel-small {
-        padding: 0.8rem 0.5rem 1.6rem 0.5rem;
-    }
     .main-title {
         font-size: 1.1rem;
     }
-    .subtitle {
+    .lead {
         font-size: 0.96rem;
-    }
-    .table-responsive {
-        width: 100%;
-        overflow-x: auto;
-    }
-    .table {
-        min-width: 500px;
-        font-size: 0.96em;
     }
     .btn {
         font-size: 0.91rem;
